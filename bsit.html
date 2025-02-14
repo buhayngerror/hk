@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Protected Message</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      background-image: url("https://www.freeiconspng.com/uploads/floral-background-design-png-2.png"); /* Floral background */
+      background-size: cover;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #FFD700; /* Yellow */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      background-color: #FFD700; /* Yellow */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #message {
+      display: none; /* Initially hide the message */
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #message h3 {
+      color: #FFD700; /* Yellow */
+      font-size: 24px;
+    }
+
+    #message p {
+      font-size: 18px;
+      color: #333; /* Dark gray */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Password Protected Message</h2>
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="checkPassword()">Submit</button>
+    <div id="message">
+      <h3>Your Secret Message:</h3>
+      <p>
+        Putangina mo<3dshdsdsjsaksamkamkzmmakmzm
+akmakmkamzmkamkzmakzmamkamkamakmkaz
+zanjanzjnajnzjanjznjanjznjajznanzjnajznajzjan
+jnzjaznjyeujdncboqkmxllajnduw
+xshdyyeydgtegdgefgdbc xn n n djfeudwiwowkswmxkmsnxjsncdc dc
+sjsnjdnjsnjdnsjnjnjnsjnsdjsuwoqplamxjdkalaj
+smxmmmmxmmxnhvkoqlalals s ns csbdyeydehufheuduheuhd
+cnjjdfdfgtwdquiddcnbvgdhyrtegd
+      </p> 
+    </div>
+  </div>
+
+  <script>
+    function checkPassword() {
+      var password = document.getElementById("password").value;
+      if (password === "bsit") { // Replace "your_password" with your actual password
+        document.getElementById("message").style.display = "block";
+        document.getElementById("password").value = ""; // Clear the password input field
+        document.getElementById("password").disabled = true; // Disable the input field
+      } else {
+        alert("Incorrect password!");
+      }
+    }
+  </script>
+</body>
+</html>
